@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+section{
+    background-color:rgb(5,14,26);
+    color: rgb(163, 160, 160);
+}
+
+/* nav-bar */
+h1{
+    font-family: 'Fira Code', monospace;
+    color: rgb(255, 20, 147);
+}
+/* li{ */
+    /* display:flex !important; */
+    /* flex-basis: auto; */
+    /* justify-content: flex-end !important; */
+/* } */
+
+/* landing */
+#landing{
+    height: 100vh;
+}
+#landing div.container{
+    text-align: justify;
+    padding-top: 200px;
+}
+#socials{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+#myEmail{
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-left: 75%;
+    padding-bottom: 80%;
+}
+ul{
+    color:rgb(5,14,26);
+ 
+}
+
+
+/* about */
+#siyolise .container-fluid{
+    width: 150px;
+    height: 250px;
+}
+#fixedInfo{
+    display: flex;
+    justify-content: space-between;
+}
