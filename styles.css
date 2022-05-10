@@ -2,10 +2,39 @@
 section{
     background-color:rgb(5,14,26);
     color: rgb(163, 160, 160);
+    padding-top: 20px;
 }
 
 /* nav-bar */
 h1{
+    font-family: 'Fira Code', monospace;
+    color: rgb(255, 20, 147);
+}
+#navbar{
+    position: fixed;
+    top:0;
+    padding-left: 0px;
+    /* background-color: rgba(10, 25, 47, 0.7); */
+    z-index: 1030px;
+}
+#navbar .navbar{
+    background: rgba(5, 14, 26, 0.8);
+    box-shadow: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030px;
+}
+.navbar-toggler-icon{
+    color: rgba(163, 160, 160,0.7);
+}
+#nav-link{
+    padding-right: 15px;
+    text-decoration: none;
+    color: rgb(163, 160, 160);
+}
+#navnumber{
     font-family: 'Fira Code', monospace;
     color: rgb(255, 20, 147);
 }
@@ -30,17 +59,20 @@ h1{
     bottom: 0;
     left: 0;
 }
+#smlink{
+    width: 46px;
+    height: 30px;
+    font-size: 1.7em;
+}
 #myEmail{
     transform: rotate(90deg);
     position: fixed;
-    bottom: 0;
-    right: 0;
-    padding-left: 75%;
-    padding-bottom: 80%;
+    bottom: 20%;
+    left: 92%; 
+    text-decoration: none;
 }
 ul{
-    color:rgb(5,14,26);
- 
+    list-style-type: none;
 }
 
 
@@ -52,4 +84,27 @@ ul{
 #fixedInfo{
     display: flex;
     justify-content: space-between;
+}
+/* experience */
+
+.nav-pills{
+    align-items: start;
+}
+
+/* contact */
+
+#icon{
+    padding-right: 0px;
+    font-size: 1.7em;
+    height: 60px;
+    width: 54px;
+    padding-left: 25px
+}
+#submit{
+    background-color: rgb(255, 20, 147);
+}
+
+/* footer */
+#footer{
+    text-decoration: none;
 }
