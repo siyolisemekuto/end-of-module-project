@@ -4,6 +4,15 @@ section{
     color: rgb(163, 160, 160);
     padding-top: 20px;
 }
+[data-aos] {
+    pointer-events: none;
+  }
+  .aos-animate {
+    pointer-events: auto;
+  }
+  .aos-init[data-aos][data-aos].aos-animate {
+    transform: unset;
+  }
 
 /* nav-bar */
 h1{
@@ -14,17 +23,16 @@ h1{
     position: fixed;
     top:0;
     padding-left: 0px;
-    /* background-color: rgba(10, 25, 47, 0.7); */
-    z-index: 1030px;
+    z-index: 1030;
 }
+
 #navbar .navbar{
-    background: rgba(5, 14, 26, 0.8);
+    background: rgba(5, 14, 26, 0.9);
     box-shadow: 20px;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030px;
 }
 .navbar-toggler-icon{
     color: rgba(163, 160, 160,0.7);
@@ -38,13 +46,9 @@ h1{
     font-family: 'Fira Code', monospace;
     color: rgb(255, 20, 147);
 }
-/* li{ */
-    /* display:flex !important; */
-    /* flex-basis: auto; */
-    /* justify-content: flex-end !important; */
-/* } */
 
-/* landing */
+/* landing section*/
+
 #landing{
     height: 100vh;
 }
@@ -63,20 +67,22 @@ h1{
     width: 46px;
     height: 30px;
     font-size: 1.7em;
+    text-decoration: none;
+    color: rgb(163, 160, 160);
 }
 #myEmail{
     transform: rotate(90deg);
     position: fixed;
     bottom: 20%;
     left: 92%; 
-    text-decoration: none;
+    text-decoration: none !important;
+    color: inherit !important;
 }
 ul{
     list-style-type: none;
 }
 
-
-/* about */
+/* about section*/
 #siyolise .container-fluid{
     width: 150px;
     height: 250px;
@@ -85,13 +91,55 @@ ul{
     display: flex;
     justify-content: space-between;
 }
-/* experience */
+
+/* skills section*/
+
+#skill-image{
+    height: 250px; 
+    width: 350px;
+}
+   
+
+/* experience section*/
 
 .nav-pills{
     align-items: start;
 }
+#arrow-icon{
+    color: rgb(255, 20, 147);
+}
+.nav-pills .nav-link.active,.nav-pills .show>.nav-link{
+    background-color: transparent !important;
+    color: rgb(255, 20, 147) !important;
+}
+.nav-pills.nav-link{
+    color: rgb(163, 160, 160) !important;
+}
+#date{
+    font-family: 'Fira Code', monospace;
+     font-size: 12px;
+}
 
-/* contact */
+/* testimonial section */
+#testimonials {
+    z-index: -1;
+}
+div .text{
+    width: 600px;
+    text-align: auto;
+    margin-right: 0;
+}
+
+/* projects section*/
+
+#project-image{
+    z-index: 1;
+}
+#project-info{
+    z-index: 3;
+}
+
+/* contact section */
 
 #icon{
     padding-right: 0px;

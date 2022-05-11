@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/47f71f9d8c.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -34,17 +35,17 @@
     <section id="landing">
         <div class="container">
             <h1 class="fs-5">Hi, my name is</h1>
-            <h2>Siyolise Mekuto,</h2>
-            <h2>An aspiring web developer.</h2>
+            <h2>Siyolise Mekuto.</h2>
+            <h2>I'm an aspiring web developer.</h2>
             <p>I have recently begun my journey in web development and currently work with HTML, CSS and Bootstrap.</p>
         </div>
           <div class="d-flex flex-column bd-highlight mb-1" id="socials" class="fixed-bottom">
             <ul>
-            <li class="p-2 bd-highlight"><a href="#"><i class="fa-brands fa-linkedin"  id="smlink"></i></a></li>
-            <li class="p-2 bd-highlight"><a href="#"><i class="fa-brands fa-github-square" id="smlink"></i></a></li>
-            <li class="p-2 bd-highlight"><a href="#"><i class="fa-brands fa-codepen" id="smlink"></i></a></li>
-            <li class="p-2 bd-highlight"><a href="#"><i class="fa-brands fa-twitter-square" id="smlink"></i></a></li>
-            <li class="p-2 bd-highlight"><a href="#"><i class="fa-brands fa-facebook-square" id="smlink"></i></a></li>
+            <li class="p-2 bd-highlight"><a href="https://www.linkedin.com/in/siyolise-mekuto-b10372204/"><i class="fa-brands fa-linkedin"  id="smlink"></i></a></li>
+            <li class="p-2 bd-highlight"><a href="https://github.com/siyolisemekuto"><i class="fa-brands fa-github-square" id="smlink"></i></a></li>
+            <li class="p-2 bd-highlight"><a href="https://codepen.io/siyolisemekuto"><i class="fa-brands fa-codepen" id="smlink"></i></a></li>
+            <li class="p-2 bd-highlight"><a href="https://twitter.com/SiyoliseM_"><i class="fa-brands fa-twitter-square" id="smlink"></i></a></li>
+            <li class="p-2 bd-highlight"><a href="#"><i class="https://www.facebook.com/profile.php?id=100075997964842" id="smlink"></i></a></li>
             </ul>
           </div>
         <div id="myEmail" class="fixed-bottom">
@@ -64,12 +65,64 @@
             </div>
             <div id="siyolise" class="col-md-4" >
                 <img src="./assets/siyolise.jpg" class="img-fluid">
+                <i data-toggle="animation"
+                data-animation-reset="true"
+                data-animation="hover"></i>
             </div>
         </div>
     </section>
 
     <!-- skills -->
-    <section id="skills"></section>
+    <section id="skills">
+      <div class="container">
+        <h1>Skills</h1>
+        <div id="skill-cards" class="row">
+  <div class="col-md-4 col-sm-6">
+  <img src="./assets/html.png" class="card-img-top" alt="image" id="skill-image">
+  <div class="card-body">
+    <h5 class="card-title">HTML5</h5>
+    <p class="card-text">Competent</p>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <img src="./assets/css.png" class="card-img-top" alt="image" id="skill-image">
+  <div class="card-body">
+    <h5 class="card-title">CSS</h5>
+    <p class="card-text">Competent</p>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <img src="./assets/bootstrap.png" class="card-img-top" alt="image" id="skill-image">
+  <div class="card-body">
+    <h5 class="card-title">Bootstrap5</h5>
+    <p class="card-text">Competent</p>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <img src="./assets/office.png" class="card-img-top" alt="image" id="skill-image">
+  <div class="card-body">
+    <h5 class="card-title">Microsoft Office</h5>
+    <p class="card-text">Experienced</p>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <img src="./assets/github.png" class="card-img-top" alt="image" id="skill-image">
+  <div class="card-body">
+    <h5 class="card-title">Github</h5>
+    <p class="card-text">Novice</p>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <img src="./assets/monitor.png" class="card-img-top" alt="image" id="skill-image">
+  <div class="card-body">
+    <h5 class="card-title">Monitoring</h5>
+    <p class="card-text">Experienced</p>
+  </div>
+  </div>
+          </div>
+        </div>
+
+    </section>
 
     <!-- testimonials -->
 
@@ -86,22 +139,22 @@
                     <div class="carousel-item pb-5 text-center active">
                       <div>
                           <img src="./assets/smangele.jpg" class="rounded-circle mb-5" style="width: 180px; height: 180px;" alt="Person">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Smangele Mntungwa</h5>
+                        <p class="text">Siyolise is one of the most humble characters I've ever come across, she is always eager to assist the next person. She has shown great dedication and work ethic, She inspires me to do better.</p>
                       </div>
                     </div>
                     <div class="carousel-item pb-5 text-center">
                       <div>
                           <img src="./assets/Lihle.jpg" class="rounded-circle mb-5" style="width: 180px; height: 180px;" alt="Person">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5>Lihle Goliath</h5>
+                        <p class="text">Siyolise is a kind-hearted, trustworthy and compassionate person. She has unlimited potential. I believe that she is strong and unshaken, and will complete anything she set her sights on.</p>
                       </div>
                     </div>
                     <div class="carousel-item pb-5 text-center">
                       <div>
                           <img src="./assets/sibonile.jpg" class="rounded-circle mb-5" style="width: 180px; height: 180px;" alt="Person">
                         <h5>Sibonile Nyalambisa</h5>
-                        <p>Siyolise is polite and respectful. She is a great communicator and can manage people to get tasks done on time.</p>
+                        <p class="text">Siyolise is polite and respectful. She is a great communicator and can manage people to get tasks done on time.</p>
                       </div>
                     </div>
                   </div>
@@ -118,51 +171,56 @@
         </section>
 
     <!-- experience -->
+
     <section id="experience">
       <div class="container">
       <h1>Education and Experience</h1>
       <div class="d-flex align-items-start">
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button class="nav-link active" id="OprahWinfreyLeadershipAcedemy" data-bs-toggle="pill" data-bs-target="#OprahWinfreyLeadershipAcademy" type="button" role="tab" aria-controls="OprahWinfreyLeadershipAcedemy" aria-selected="true">Oprah Winfrey Leadership Academy</button>
-          <button class="nav-link" id="RhodesUniversity" data-bs-toggle="pill" data-bs-target="#RhodesUniversity" type="button" role="tab" aria-controls="RhodesUniversity" aria-selected="false">Rhodes University</button>
-          <button class="nav-link" id="RhodesUniversitySRCMediaTeam" data-bs-toggle="pill" data-bs-target="#RhodesUniversitySRCMediaTeam" type="button" role="tab" aria-controls="RhodesUniversitySRCMediaTeam" aria-selected="false">Rhodes University SRC Media Team</button>
-          <button class="nav-link" id="ParliamentaryMonitoringGroup" data-bs-toggle="pill" data-bs-target="#ParliamentaryMonitoringGroup" type="button" role="tab" aria-controls="ParliamentaryMonitoringGroup" aria-selected="false">Parliamentary Monitoring Group</button>
-          <button class="nav-link" id="StatsSACensus2022" data-bs-toggle="pill" data-bs-target="#StatsSACensus2022" type="button" role="tab" aria-controls="StatsSACensus2022" aria-selected="false">Stats SA Cenus 2022</button>
-          <button class="nav-link" id="LifeChoices" data-bs-toggle="pill" data-bs-target="#LifeChoices" type="button" role="tab" aria-controls="LifeChoices" aria-selected="false">Life Choices</button>
+          <button class="nav-link active" id="OprahWinfreyLeadershipAcedemy-tab" data-bs-toggle="pill" data-bs-target="#OprahWinfreyLeadershipAcademy" type="button" role="tab" aria-controls="OprahWinfreyLeadershipAcedemy" aria-selected="true">Oprah Winfrey Leadership Academy</button>
+          <button class="nav-link" id="RhodesUniversity-tab" data-bs-toggle="pill" data-bs-target="#RhodesUniversity" type="button" role="tab" aria-controls="RhodesUniversity" aria-selected="false">Rhodes University</button>
+          <button class="nav-link" id="RhodesUniversitySRCMediaTeam-tab" data-bs-toggle="pill" data-bs-target="#RhodesUniversitySRCMediaTeam" type="button" role="tab" aria-controls="RhodesUniversitySRCMediaTeam" aria-selected="false">Rhodes University SRC Media Team</button>
+          <button class="nav-link" id="ParliamentaryMonitoringGroup-tab" data-bs-toggle="pill" data-bs-target="#ParliamentaryMonitoringGroup" type="button" role="tab" aria-controls="ParliamentaryMonitoringGroup" aria-selected="false">Parliamentary Monitoring Group</button>
+          <button class="nav-link" id="StatsSACensus2022-tab" data-bs-toggle="pill" data-bs-target="#StatsSACensus2022" type="button" role="tab" aria-controls="StatsSACensus2022" aria-selected="false">Stats SA Cenus 2022</button>
+          <button class="nav-link" id="LifeChoices-tab" data-bs-toggle="pill" data-bs-target="#LifeChoices" type="button" role="tab" aria-controls="LifeChoices" aria-selected="false">Life Choices</button>
         </div>
         <div class="tab-content" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="OprahWinfreyLeadershipAcedemy" role="tabpanel" aria-labelledby="OprahWinfreyLeadershipAcedemy">
-            <h5>Matric</h5>
-            <span>November 2017</span>
-            <p>IEB Bachelor Pass</p>
-            <p>Results available upon request</p>
+            <h5 class="mb-0">Matric</h5>
+            <span id="date" class="mb-15">November 2017</span>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> IEB Bachelor Pass</p>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Results available upon request</p>
           </div>
           <div class="tab-pane fade" id="RhodesUniversity" role="tabpanel" aria-labelledby="RhodesUniversity">
-            <h5>Bachelor of Arts (2nd Year)</h5>
-            <span>February 2018 - November 2021</span>
-            <p>Majoring in Philosophy and Economics</p>
-            <p>Distinction in Psychology 1</p>
-            <p>Results available upon request</p>
+            <h5 class="mb-0">Bachelor of Arts (2nd Year)</h5>
+            <span id="date" class="mb-15">February 2018 - November 2021</span>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Majoring in Philosophy and Economics</p>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Distinction in Psychology 1</p>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Results available upon request</p>
           </div>
           <div class="tab-pane fade" id="RhodesUniversitySRCMediaTeam" role="tabpanel" aria-labelledby="RhodesUniversitySRCMediaTeam">
-            <h5>Deputy Writing Editor</h5>
-            <span>February 2020 - November 2020</span>
-            <p>Writing Editor</p>
-            <p>Writing and editing articles and SRC statements</p>
+            <h5 class="mb-0">Deputy Writing Editor</h5>
+            <span id="date" class="mb-15">February 2020 - November 2020</span>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Writing Editor</p>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Writing and editing articles and SRC statements</p>
           </div>
           <div class="tab-pane fade" id="ParliamentaryMonitoringGroup" role="tabpanel" aria-labelledby="ParliamentaryMonitoringGroup">
-            <h5>Freelance Monitor</h5>
-            <span>September 2021 - January 2022</span>
-            <p>Monitoring Women, Youth and People with Disability Committee meetings</p>
+            <h5 class="mb-0">Freelance Monitor</h5>
+            <span id="date" class="mb-15">September 2021 - January 2022</span>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Monitoring Women, Youth and People with Disability Committee meetings</p>
           </div>
           <div class="tab-pane fade" id="StatsSACensus2022" role="tabpanel" aria-labelledby="StatsSACensus2022">
-            <h5>Fielworker Supervisor</h5>
-            <span>February 2022 - March 2022</span>
+            <h5 class="mb-0">Fielworker Supervisor</h5>
+            <span id="date" class="mb-15">February 2022 - March 2022</span>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Fieldwork verification</p>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Conducting publicity</p>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Quality control</p>
+
           </div>
           <div class="tab-pane fade" id="LifeChoices" role="tabpanel" aria-labelledby="LifeChoices">
-            <h5>Student</h5>
-            <span>March 2022 - Present</span>
-            <p>Web development</p>
+            <h5 class="mb-0">Student</h5>
+            <span id="date" class="mb-15">March 2022 - Present</span>
+            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Web development</p>
           </div>
         </div>
       </div>
@@ -170,7 +228,22 @@
     </section>
 
     <!-- projects -->
-    <section id="projects"></section>
+    <section id="projects">
+      <div class="container">
+        <h1>Projects</h1>
+        <div class="project-container">
+          <div class="row">
+            <div class="container" class="col-md-6" id="project-image"><img src="https://picsum.photos/450/300?grayscale"></div>
+            <div class="container" class="col-md-6" id="project-info">
+              <h4>name of project</h4>
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eum corrupti molestias placeat atque odit doloribus eos repellendus magni quisquam.</div>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- contact -->
     <section id="contact">
@@ -207,18 +280,19 @@
                 </div>
               </div>
               <div class="col-md-8">
-                <form>
+                <form action="https://formspree.io/f/meqnvgjj"
+                method="POST">
                   <div class="row">
                     <div class="col-md-6 mt-3">
-                    <input type="name" class="form-control" id="name" placeholder="Your Name"></div>
+                    <input type="name" class="form-control" id="name" placeholder="Your Name" name="name"></div>
                     <div class="col-md-6 mt-3">
-                    <input type="email" class="form-control" id="email" placeholder="Your Email"></div>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email"></div>
                     <div class="mt-3 ">
-                    <input type="phone" class="form-control" id="phone" placeholder="Your Phone"></div>
+                    <input type="phone" class="form-control" id="phone" placeholder="Your Phone" name="phone"></div>
                 </div>
                 <div class="row">
                     <div class=" mt-3 ">
-                    <textarea type="text" class="form-control" id="text" placeholder="Message"></textarea></div>
+                    <textarea type="text" class="form-control" id="text" placeholder="Message" name="message"></textarea></div>
                 <div class="row display-flex justify-content-evenly">
                     <div class="col-auto mt-3 mb-3">
                         <button type="submit" class="btn btn-warning" id="submit">Send Message</button>
