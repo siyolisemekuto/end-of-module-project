@@ -15,16 +15,21 @@
     <!-- navbar -->
 
     <section id="navbar">
-          <nav class="navbar fixed-top navbar-light" class="shadow-lg p-3 mb-5">
-            <div class="container-fluid">
+          <nav class="navbar fixed-top navbar-light" class="navbar navbar-expand-m bg-dark navbar-dark">
+            <div class="container-fluid shadow p-3">
               <a class="navbar-brand" href="#landing"><h1 class="fs-4">SM</h1></a>
-              <div class="d-flex justify-items-end">
-                  <a href="#about" id="nav-link"><span class="fs-6" id="navnumber">01.</span>About</a>
-                  <a href="#skills" id="nav-link"><span class="fs-6" id="navnumber">02.</span>Skills</a>
-                  <a href="#testimonials" id="nav-link"><span class="fs-6" id="navnumber">03.</span>Testimonials</a>
-                  <a href="#experience" id="nav-link"><span class="fs-6" id="navnumber">04.</span>Education and Experience</a>
-                  <a href="#projects" id="nav-link"><span class="fs-6" id="navnumber">05.</span>Projects</a>
-                  <a href="#contact" id="nav-link"><span class="fs-6" id="navnumber">06.</span>Contact</a>
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              <!-- <div class="collapse navbar-collapse-m" id="collapsibleNavbar"> -->
+              <!-- <div class="d-flex justify-items-end" class="collapse navbar-collapse" id="navbarText"> -->
+                <ul  class="d-flex justify-items-end">
+                  <li><a href="#about" id="nav-link"><span class="fs-6" id="navnumber">01.</span>About</a></li>
+                  <li><a href="#experience" id="nav-link"><span class="fs-6" id="navnumber">02.</span>Experience</a></li>
+                  <li><a href="#projects" id="nav-link"><span class="fs-6" id="navnumber">03.</span>Projects</a></li>
+                  <li><a href="#testimonials" id="nav-link"><span class="fs-6" id="navnumber">04.</span>Testimonials</a></li>
+                  <li><a href="#contact" id="nav-link"><span class="fs-6" id="navnumber">05.</span>Contact</a></li>
+                </ul>
               </div>
             </div>
           </nav>
@@ -34,9 +39,9 @@
 
     <section id="landing">
         <div class="container">
-            <h1 class="fs-5">Hi, my name is</h1>
-            <h2>Siyolise Mekuto.</h2>
-            <h2>I'm an aspiring web developer.</h2>
+            <p class="fs-5">Hi, I am</p>
+            <h1>Siyolise Mekuto.</h1>
+            <p class="fs-1">An aspiring web developer.</p>
             <p>I have recently begun my journey in web development and currently work with HTML, CSS and Bootstrap.</p>
         </div>
           <div class="d-flex flex-column bd-highlight mb-1" id="socials" class="fixed-bottom">
@@ -45,11 +50,12 @@
             <li class="p-2 bd-highlight"><a href="https://github.com/siyolisemekuto"><i class="fa-brands fa-github-square" id="smlink"></i></a></li>
             <li class="p-2 bd-highlight"><a href="https://codepen.io/siyolisemekuto"><i class="fa-brands fa-codepen" id="smlink"></i></a></li>
             <li class="p-2 bd-highlight"><a href="https://twitter.com/SiyoliseM_"><i class="fa-brands fa-twitter-square" id="smlink"></i></a></li>
-            <li class="p-2 bd-highlight"><a href="#"><i class="https://www.facebook.com/profile.php?id=100075997964842" id="smlink"></i></a></li>
+            <li class="p-2 bd-highlight"><a href="https://www.facebook.com/profile.php?id=100075997964842"><i class="fa-brands fa-facebook-square" id="smlink"></i></a></li>
             </ul>
           </div>
         <div id="myEmail" class="fixed-bottom">
             <a href="mailto:siyozamekuto2.0@gmail.com">siyozamekuto2.0@gmail.com</a>
+
         </div>
     </section>
 
@@ -124,52 +130,6 @@
 
     </section>
 
-    <!-- testimonials -->
-
-        <section id="testimonials">
-          <div class="container">
-              <h1 class="mb-5">Testimonials</h1>
-              <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="0" class="active rounded-circle"  style="width: 20px; height: 20px;" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="1" class="rounded-circle"  style="width: 20px; height: 20px;" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="2" class="rounded-circle"  style="width: 20px; height: 20px;"aria-label="Slide 3"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item pb-5 text-center active">
-                      <div>
-                          <img src="./assets/smangele.jpg" class="rounded-circle mb-5" style="width: 180px; height: 180px;" alt="Person">
-                        <h5>Smangele Mntungwa</h5>
-                        <p class="text">Siyolise is one of the most humble characters I've ever come across, she is always eager to assist the next person. She has shown great dedication and work ethic, She inspires me to do better.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item pb-5 text-center">
-                      <div>
-                          <img src="./assets/Lihle.jpg" class="rounded-circle mb-5" style="width: 180px; height: 180px;" alt="Person">
-                        <h5>Lihle Goliath</h5>
-                        <p class="text">Siyolise is a kind-hearted, trustworthy and compassionate person. She has unlimited potential. I believe that she is strong and unshaken, and will complete anything she set her sights on.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item pb-5 text-center">
-                      <div>
-                          <img src="./assets/sibonile.jpg" class="rounded-circle mb-5" style="width: 180px; height: 180px;" alt="Person">
-                        <h5>Sibonile Nyalambisa</h5>
-                        <p class="text">Siyolise is polite and respectful. She is a great communicator and can manage people to get tasks done on time.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#testimonialSlider" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#testimonialSlider" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-          </div>
-        </section>
-
     <!-- experience -->
 
     <section id="experience">
@@ -177,7 +137,7 @@
       <h1>Education and Experience</h1>
       <div class="d-flex align-items-start">
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button class="nav-link active" id="OprahWinfreyLeadershipAcedemy-tab" data-bs-toggle="pill" data-bs-target="#OprahWinfreyLeadershipAcademy" type="button" role="tab" aria-controls="OprahWinfreyLeadershipAcedemy" aria-selected="true">Oprah Winfrey Leadership Academy</button>
+          <button class="nav-link " id="OprahWinfreyLeadershipAcedemy-tab" data-bs-toggle="pill" data-bs-target="#OprahWinfreyLeadershipAcedemy" type="button" role="tab" aria-controls="OprahWinfreyLeadershipAcedemy" aria-selected="true">Oprah Winfrey Leadership Academy</button>
           <button class="nav-link" id="RhodesUniversity-tab" data-bs-toggle="pill" data-bs-target="#RhodesUniversity" type="button" role="tab" aria-controls="RhodesUniversity" aria-selected="false">Rhodes University</button>
           <button class="nav-link" id="RhodesUniversitySRCMediaTeam-tab" data-bs-toggle="pill" data-bs-target="#RhodesUniversitySRCMediaTeam" type="button" role="tab" aria-controls="RhodesUniversitySRCMediaTeam" aria-selected="false">Rhodes University SRC Media Team</button>
           <button class="nav-link" id="ParliamentaryMonitoringGroup-tab" data-bs-toggle="pill" data-bs-target="#ParliamentaryMonitoringGroup" type="button" role="tab" aria-controls="ParliamentaryMonitoringGroup" aria-selected="false">Parliamentary Monitoring Group</button>
@@ -233,17 +193,81 @@
         <h1>Projects</h1>
         <div class="project-container">
           <div class="row">
-            <div class="container" class="col-md-6" id="project-image"><img src="https://picsum.photos/450/300?grayscale"></div>
-            <div class="container" class="col-md-6" id="project-info">
-              <h4>name of project</h4>
-              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eum corrupti molestias placeat atque odit doloribus eos repellendus magni quisquam.</div>
-              <a href="#"></a>
-              <a href="#"></a>
+            <div class="col-md-6" id="project-image">
+              <img class="img-fluid" style="width: 800px; height: 50vh; object-fit: cover;" src="./assets/restaurant.png">
+            </div>
+            <div class="col-md-6 d-flex-column align-items-end" id="project-info">
+              <h4>Restaurant Webpage</h4>
+              <div class="project-desc shadow p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eum corrupti molestias placeat atque odit doloribus eos repellendus magni quisquam.</div>
+              <div id="project-link" class="d-flex"><a href="https://github.com/siyolisemekuto/bootstrap/tree/main/website"><i class="fa-brands fa-github-square"></i></a>
+              <a href="https://lighthearted-wisp-898038.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" id="project-info-two">
+              <h4>Mock Portfolio</h4>
+              <div class="project-desc shadow p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eum corrupti molestias placeat atque odit doloribus eos repellendus magni quisquam.</div>
+              <div id="project-link" class="d-flex"><a href="https://musical-lollipop-f78be0.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/siyolisemekuto/mock-portfolio"><i class="fa-brands fa-github-square"></i></a></div>
+            </div>
+            <div class="col-md-6" id="project-image">
+              <img class="img-fluid" style="width: 800px; height: 50vh; object-fit: cover;" src="./assets/mock.PNG">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" id="project-image">
+              <img class="img-fluid" style="width: 800px; height: 50vh;" src="./assets/calculator.png">
+            </div>
+            <div class="col-md-6 d-flex-column align-items-end" id="project-info">
+              <h4>Calculator</h4>
+              <div class="project-desc shadow p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eum corrupti molestias placeat atque odit doloribus eos repellendus magni quisquam.</div>
+              <div id="project-link" class="d-flex"><a href="https://github.com/siyolisemekuto/calculator"><i class="fa-brands fa-github-square"></i></a>
+              <a href="https://boisterous-sunburst-0df457.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a></div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- testimonials -->
+
+        <section id="testimonials">
+          <div class="container">
+              <h1 class="mb-5">Testimonials</h1>
+              <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="0" class="active"  aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item pb-5 text-center active">
+                          <img src="./assets/smangele.jpg" style="width: 180px; height: 180px;" alt="Person">
+                        <h5>Smangele Mntungwa</h5>
+                        <p>Siyolise is one of the most humble characters I've ever come across, she is always eager to assist the next person. She has shown great dedication and work ethic, She inspires me to do better.</p>
+                    </div>
+                    <div class="carousel-item pb-5 text-center">
+                          <img src="./assets/Lihle.jpg" style="width: 180px; height: 180px;" alt="Person">
+                        <h5>Lihle Goliath</h5>
+                        <p>Siyolise is a kind-hearted, trustworthy and compassionate person. She has unlimited potential. I believe that she is strong and unshaken, and will complete anything she set her sights on.</p>
+                    </div>
+                    <div class="carousel-item pb-5 text-center">
+                          <img src="./assets/sibonile.jpg" style="width: 180px; height: 180px;" alt="Person">
+                        <h5>Sibonile Nyalambisa</h5>
+                        <p>Siyolise is polite and respectful. She is a great communicator and can manage people to get tasks done on time.</p>
+                    </div>
+                    <div class="carousel-item pb-5 text-center">
+                      <img src="./assets/Sabelo.JPG" style="width: 180px; height: 180px;" alt="Person">
+                    <h5>Sabelo Mdashe</h5>
+                    <p>Siyolise has the ability to befriend anyone she meets, as she is a natural extrovert and is noticeably confident. She interacts well with everyone because of her confidence and her amicable and very sincere personality. Aside from enjoying a wide circle of loyal friends and peers, Siyolise also has the respect of her colleagues.</p>
+                </div>
+                  </div>
+                 
+                </div>
+          </div>
+        </section>
+
 
     <!-- contact -->
     <section id="contact">
@@ -251,51 +275,26 @@
             <h1>Contact me</h1>
             <div class="row">
               <div class="col-md-4">
-                <div class="row">
-                  <div class="col-md-5">
-                    <i class="fa-solid fa-location-dot" id="icon" class="icon-3x"></i>
-                  </div>
-                  <div class="col-md-7">
-                    <h5>Location</h5>
-                    <span>Nyanga</span>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-5">
-                    <i class="fa-solid fa-envelope" id="icon"></i>
-                  </div>
-                  <div class="col-md-7">
-                    <h5>Email</h5>
-                    <span>siyozamekuto2.0@gmail.com</span>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-5">
-                    <i class="fa-solid fa-mobile" id="icon"></i>
-                  </div>
-                  <div class="col-md-7">
-                    <h5>Phone</h5>
-                    <span>0634151183</span>
-                  </div>
-                </div>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52847.932331868935!2d18.864726!3d-34.120858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdca5228bfab99%3A0xfa579031c0ea9162!2s19173%20Nonqubela%20St%2C%20Lwandle%2C%20Cape%20Town%2C%207143%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1652359541452!5m2!1sen!2sus"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               <div class="col-md-8">
                 <form action="https://formspree.io/f/meqnvgjj"
                 method="POST">
                   <div class="row">
                     <div class="col-md-6 mt-3">
-                    <input type="name" class="form-control" id="name" placeholder="Your Name" name="name"></div>
+                    <input type="name" class="form-control" id="name" placeholder="Name" name="name"></div>
                     <div class="col-md-6 mt-3">
-                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email"></div>
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email"></div>
                     <div class="mt-3 ">
-                    <input type="phone" class="form-control" id="phone" placeholder="Your Phone" name="phone"></div>
+                    <input type="phone" class="form-control" id="phone" placeholder="Phone number" name="phone"></div>
                 </div>
                 <div class="row">
                     <div class=" mt-3 ">
                     <textarea type="text" class="form-control" id="text" placeholder="Message" name="message"></textarea></div>
                 <div class="row display-flex justify-content-evenly">
                     <div class="col-auto mt-3 mb-3">
-                        <button type="submit" class="btn btn-warning" id="submit">Send Message</button>
+                        <button type="submit" class="btn" id="submit">Send Message</button>
                       </div>
                 </div>
                 </form>
@@ -303,11 +302,9 @@
             </div>
         </div>
     </section>
-    <section id="footer">
       <footer class="text-center">
         <a href= https://github.com/siyolisemekuto/end-of-module-project><p>Created by Siyolise Mekuto, 2022</p></a>
       </footer>
-    </section>
 
     
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
