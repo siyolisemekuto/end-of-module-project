@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
 section{
     background-color:rgb(5,14,26);
-    color: rgb(163, 160, 160);
+    color: rgb(204, 214, 246);
     padding-top: 20px;
 }
 
@@ -9,13 +13,14 @@ section{
 /* nav-bar */
 h1{
     font-family: 'Fira Code', monospace;
-    color: rgb(255, 20, 147);
+    color: rgb(204, 214, 246);
 }
 #navbar{
     position: fixed;
     top:0;
     padding-left: 0px;
-    z-index: 1030;
+    z-index: 1030; 
+    width:fit-content
 }
 
 #navbar .navbar{
@@ -26,24 +31,74 @@ h1{
     right: 0;
     left: 0;
 }
-.navbar-toggler-icon{
-    color: rgba(163, 160, 160,0.7);
+.navbar-brand{
+    font-family: 'Fira Code', monospace;
+    color: rgb(255, 20, 147) !important;
 }
-#nav-link{
+#nav-about{
     padding-right: 15px;
     text-decoration: none;
-    color: rgb(163, 160, 160);
-    font-size: 13px;
+    color: rgb(204, 214, 246);
+    font-size: 15px;
 }
-#navnumber{
+#nav-about:hover{
+    color: rgb(255, 20, 147); 
+}
+#nav-experience{
+    padding-right: 15px;
+    text-decoration: none;
+    color: rgb(204, 214, 246);
+    font-size: 15px;
+}
+#nav-experience:hover{
+    color: rgb(255, 20, 147); 
+}
+#nav-projects{
+    padding-right: 15px;
+    text-decoration: none;
+    color: rgb(204, 214, 246);
+    font-size: 15px;
+}
+#nav-projects:hover{
+    color: rgb(255, 20, 147); 
+}
+#nav-testimonials{
+    padding-right: 15px;
+    text-decoration: none;
+    color: rgb(204, 214, 246);
+    font-size: 15px;
+}
+#nav-testimonials:hover{
+    color: rgb(255, 20, 147); 
+}
+#nav-contact{
+    padding-right: 15px;
+    text-decoration: none;
+    color: rgb(204, 214, 246);
+    font-size: 15px;
+}
+#nav-contact:hover{
+    color: rgb(255, 20, 147); 
+}
+#navbar span{
     font-family: 'Fira Code', monospace;
     color: rgb(255, 20, 147);
+    font-size: 15px;
 }
+
 
 /* landing section*/
 
 #landing{
     height: 100vh;
+    position: relative;
+}
+#particles-js{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 #landing div.container{
     text-align: justify;
@@ -53,11 +108,11 @@ h1{
     font-family: 'Fira Code', monospace;
     font-size: 15px;
     margin-bottom: 30px;
+    color: rgb(255, 20, 147);
 }
 #landing h1{
     font-size: 72.7px;
     color: rgb(204 214 246);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #landing p{
     font-size: 20px;
@@ -69,13 +124,61 @@ h1{
     bottom: 18%;
     left: 0;
 }
-#smlink{
+#linkedin{
     width: 46px;
     height: 30px;
-    font-size: 1.7em;
+    font-size: 1.7em ;
     text-decoration: none;
-    color: rgb(163, 160, 160);
+    color: rgb(204, 214, 246);  
+    transition:0.3 linear;
 }
+#linkedin:hover{
+      color: rgb(255, 20, 147);
+}
+#github{
+    width: 46px;
+    height: 30px;
+    font-size: 1.7em ;
+    text-decoration: none;
+    color: rgb(204, 214, 246);  
+    transition:0.3 linear;
+}
+#github:hover{
+    color: rgb(255, 20, 147);
+}
+#codepen{
+    width: 46px;
+    height: 30px;
+    font-size: 1.7em ;
+    text-decoration: none;
+    color: rgb(204, 214, 246);  
+    transition:0.3 linear;
+}
+#codepen:hover{
+    color: rgb(255, 20, 147);
+}
+#twitter{
+    width: 46px;
+    height: 30px;
+    font-size: 1.7em ;
+    text-decoration: none;
+    color: rgb(204, 214, 246);  
+    transition:0.3 linear
+}
+#twitter:hover{
+    color: rgb(255, 20, 147);
+}
+#facebook{
+    width: 46px;
+    height: 30px;
+    font-size: 1.7em ;
+    text-decoration: none;
+    color: rgb(204, 214, 246);  
+    transition:0.3 linear
+}
+#facebook:hover {
+    color: rgb(255, 20, 147);
+} 
 ul{
     list-style-type: none;
 }
@@ -84,18 +187,24 @@ ul{
     position: fixed;
     bottom: 40%;
     left: 92%; 
-    color: rgb(163, 160, 160);
+    color: rgb(204, 214, 246);
     font-family: 'Fira Code', monospace;
 }
-
-
-/* about section*/
-section #about{
-    margin-top: 35px;
+#landing #particles-js{
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-#siyolise .container-fluid{
-    width: 150px;
-    height: 150px;
+/* about section*/
+div.about-container{
+    padding-left: 80px !important;
+}
+
+
+#siyolise .img-fluid{
+    width: auto;
+    height: 20rem !important;
 }
 #fixedInfo{
     display: flex;
@@ -104,11 +213,27 @@ section #about{
 
 /* skills section*/
 
+
+
 #skill-image{
-    height: 250px; 
+    height: 180px !important;
     width: 350px;
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
 }
-   
+.card-body{
+    padding-left: 120px !important;
+}
+#skills h1{
+    padding-left:80px;
+}
+#skill-cards .col-md-4{
+    width: 250px !important;
+} 
+#skill-cards{
+    
+}  
 
 /* experience section*/
 section #experience{
@@ -125,7 +250,7 @@ section #experience{
     color: rgb(255, 20, 147) !important;
 }
 .nav-pills.nav-link{
-    color: rgb(163, 160, 160) !important;
+    color: rgb(204, 214, 246) !important;
 }
 #date{
     font-family: 'Fira Code', monospace;
@@ -167,7 +292,7 @@ div .text{
    
     font-size: 1.7em;
     text-decoration: none;
-    color: rgb(163, 160, 160);
+    color: rgb(204, 214, 246);
 }
 
 /* contact section */
@@ -196,6 +321,7 @@ iframe{
 /* footer */
 footer{
     background-color:rgb(5,14,26);
+    height:70px !important;
 }
 footer.text-center{
     text-decoration: none;
