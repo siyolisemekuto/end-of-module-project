@@ -20,14 +20,14 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 400,
+        value: 225,
         density: {
           enable: true,
-          value_area: 800
+          value_area: 714
         }
       },
       color: {
-        value: '#fff'
+        value: '#ff1493'
       },
       shape: {
         type: 'circle',
@@ -36,16 +36,16 @@ var pJS = function(tag_id, params){
           color: '#ff0000'
         },
         polygon: {
-          nb_sides: 5
+          nb_sides: 6
         },
         image: {
-          src: '',
+          src: 'edge',
           width: 100,
           height: 100
         }
       },
       opacity: {
-        value: 1,
+        value: 0.5,
         random: false,
         anim: {
           enable: false,
@@ -66,10 +66,10 @@ var pJS = function(tag_id, params){
       },
       line_linked: {
         enable: true,
-        distance: 100,
-        color: '#fff',
-        opacity: 1,
-        width: 1
+        distance: 159,
+        color: '#ff1493',
+        opacity: 0.43,
+        width: 1.6
       },
       move: {
         enable: true,
