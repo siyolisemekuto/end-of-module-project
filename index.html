@@ -33,7 +33,7 @@
     <!-- landing -->
 
     <section id="landing">
-      <div id="particles-js"></div>
+      <div id="particular"></div>
         <div class="container">
             <p class="fs-5">Hi, I am</p>
             <h1>Siyolise Mekuto,</h1>
@@ -188,8 +188,8 @@
             <div class="col-md-6 d-flex-column align-items-end" id="project-info">
               <h4>Restaurant Webpage</h4>
               <div class="project-desc shadow p-3">I created a webpage using Bootstrap 5, HTML 5 and CSS. The project required me to learn how to read documentation so I could attempt to use skills I had not officially been taught before. Through the course of a week I had to replicate the example given as closely as possible.</div>
-              <div id="project-link" class="d-flex"><a href="https://github.com/siyolisemekuto/bootstrap/tree/main/website"><i class="fa-brands fa-github-square"></i></a>
-              <a href="https://lighthearted-wisp-898038.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a></div>
+              <div id="project-link"><a href="https://github.com/siyolisemekuto/bootstrap/tree/main/website"><i class="fa-brands fa-github-square"></i></a>
+              <a href="https://lighthearted-wisp-898038.netlify.app/"><i class="fa-solid fa-up-right-from-square py-4"></i></a></div>
             </div>
           </div>
           <div class="row mt-5">
@@ -197,7 +197,7 @@
               <h4>Mock Portfolio</h4>
               <div class="project-desc shadow p-3">This was my second attempt to create a portfolio. Using a sample from bootstrap, I had to replicate it as closely as possible. This project intoduced me to interactive effects (hover in particular) and the Bootstrap grid system.</div>
               <div id="project-link" class="d-flex"><a href="https://musical-lollipop-f78be0.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
-              <a href="https://github.com/siyolisemekuto/mock-portfolio"><i class="fa-brands fa-github-square"></i></a></div>
+              <a href="https://github.com/siyolisemekuto/mock-portfolio"><i class="fa-brands fa-github-square py-4"></i></a></div>
             </div>
             <div class="col-md-6" id="project-image">
               <img class="img-fluid rounded" style="width: 800px; height: 50vh; object-fit: cover;" src="./assets/mock.PNG">
@@ -229,6 +229,7 @@
                     <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="1"  aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item pb-5 text-center active">
@@ -300,9 +301,19 @@
       <footer class="text-center shadow p-3">
         <a href= https://github.com/siyolisemekuto/end-of-module-project><p>Created by Siyolise Mekuto, 2022</p></a>
       </footer>
-<script src="./particles.js"></script>
+<!-- <script src="./particles.js"></script> -->
 
-<script src="app.js"></script>
+<!-- <script src="./particlesjs-config.json" id="particles-js"></script> -->
+
+
+
+    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+      particlesJS.load("particular", "particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
     
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
