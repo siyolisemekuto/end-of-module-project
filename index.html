@@ -14,7 +14,7 @@
 
     <!-- navbar -->
 
-    <section id="navbar">
+    <div id="navbar">
       <nav class="navbar navbar-expand-md navbar-dark shadow p-3">
             <a class="navbar-brand" href="#landing">SM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,13 +22,12 @@
             </button>
                 <ul class="navbar-nav collapse navbar-collapse justify-content-end" id="nav-links">
                   <li><a href="#about" class=nav-link id="nav-about"><span>01.</span>About</a></li>
-                  <li><a href="#experience" class=nav-link id="nav-experience"><span>02.</span>Experience</a></li>
                   <li><a href="#projects" class=nav-link id="nav-projects"><span>03.</span>Projects</a></li>
-                  <li><a href="#testimonials" class=nav-link id="nav-testimonials"><span>04.</span>Testimonials</a></li>
-                  <li><a href="#contact" class=nav-link  id="nav-contact"><span>05.</span>Contact</a></li>
+                  <li><a href="#experience" class=nav-link id="nav-experience"><span>02.</span>Experience</a></li>
+                  <li><a href="#contact" class=nav-link  id="nav-contact"><span>04.</span>Contact</a></li>
                 </ul>
         </nav>
-    </section>
+      </div>
 
     <!-- landing -->
 
@@ -36,13 +35,13 @@
       <div id="particular"></div>
         <div class="container">
             <p class="fs-5">Hi, I am</p>
-            <h1>Siyolise Mekuto,</h1>
+            <h2>Siyolise Mekuto,</h2>
             <p class="fs-1">An aspiring web developer.</p>
             <p>I have recently begun my journey in web development and currently work with HTML, CSS and Bootstrap.</p>
         </div>
           <div class="d-flex flex-column bd-highlight mb-1" id="socials" class="fixed-bottom">
             <ul>
-            <li class="p-2 bd-highlight"><a href="https://www.linkedin.com/in/siyolise-mekuto-b10372204/"><i class="fa-brands fa-linkedin"  class=smlink id="linkedin"></i></a></li>
+            <li class="p-2 bd-highlight"><a href="https://www.linkedin.com/in/siyolise-mekuto-b10372204/"><i class="fa-brands fa-linkedin"  class="smlink" id="linkedin"></i></a></li>
             <li class="p-2 bd-highlight"><a href="https://github.com/siyolisemekuto"><i class="fa-brands fa-github-square" class=smlink id="github"></i></a></li>
             <li class="p-2 bd-highlight"><a href="https://codepen.io/siyolisemekuto"><i class="fa-brands fa-codepen" class=smlink id="codepen"></i></a></li>
             <li class="p-2 bd-highlight"><a href="https://twitter.com/SiyoliseM_"><i class="fa-brands fa-twitter-square" class=smlink id="twitter"></i></a></li>
@@ -58,15 +57,16 @@
     <!-- about -->
 
     <section id="about">
-        <div class="about-container">
-            <div class="row">
-              <div class="col-md-6 line">
-                <h1 class="text-decoration-underline">About me</h1>
-                <p>I am a lifelong learner with extensive experience in communication. I enjoy working individually but value teamwork. I have been described as pleasant to be around and enthusiastic. I want to use the web development skills I have learnt for business and community development.</p>
-                <p>I enjoy reading political fiction, watching movies and theatre productions and hiking</p>
+        <div class="container">
+          <h1>About</h1>
+            <div class="row" id="about-info">  
+              <div class="col-md-6 ">
+                <p class="lh-base">I am a lifelong learner with extensive experience in communication. I enjoy working individually but value teamwork. I have been described as pleasant to be around and enthusiastic. I want to use the web development skills I am learning for business and community development.</p>
+                <p class="lh-base">I enjoy reading political fiction, watching movies and theatre productions.</p>
+                <p class="lh-base"> I looked into coding when I was at a cross-roads in my life. After university I realised I am motivated by creating things and standing apart from the crowd. Taking a coding course satisfied those yearnings in me. From the get go at the Life Choices Bootcamp, I have been able to challenge and express myself in a way that is relevant.</p>
             </div>
-            <div id="siyolise" class="col-md-4" >
-                <img src="./assets/siyolise.jpg" class="img-fluid rounded">
+            <div id="siyolise" class="col-md-4 mt-2" >
+                <img src="./assets/siyolise.jpg"  class="img-fluid rounded">
                 <i data-toggle="animation"
                 data-animation-reset="true"
                 data-animation="hover"></i>
@@ -76,8 +76,8 @@
 
     <!-- skills -->
     <section id="skills">
-      <div class="skills-container">
-        <h1 class="text-decoration-underline">Skills</h1>
+      <div class="container">
+        <h1>Skills</h1>
         <div class="row">
   <div class="col-md-2" id="skill-cards" >
   <i class="fa-brands fa-html5" id="skill-image"></i>
@@ -108,7 +108,7 @@
   </div>
   </div>
   <div class="col-md-2" id="skill-cards">
-  <i class="fa-brands fa-github"id="skill-image"></i>
+  <i class="fa-brands fa-github" id="skill-image"></i>
   <div class="card-body">
     <h5 class="card-title">Github</h5>
     <p class="card-text">Novice</p>
@@ -119,67 +119,11 @@
 
     </section>
 
-    <!-- experience -->
-
-    <section id="experience">
-      <div class="container">
-      <h1 class="text-decoration-underline">Education and Experience</h1>
-      <div class="d-flex align-items-start">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button class="nav-link " id="OprahWinfreyLeadershipAcedemy-tab" data-bs-toggle="pill" data-bs-target="#OprahWinfreyLeadershipAcedemy" type="button" role="tab" aria-controls="OprahWinfreyLeadershipAcedemy" aria-selected="true">Oprah Winfrey Leadership Academy</button>
-          <button class="nav-link" id="RhodesUniversity-tab" data-bs-toggle="pill" data-bs-target="#RhodesUniversity" type="button" role="tab" aria-controls="RhodesUniversity" aria-selected="false">Rhodes University</button>
-          <button class="nav-link" id="RhodesUniversitySRCMediaTeam-tab" data-bs-toggle="pill" data-bs-target="#RhodesUniversitySRCMediaTeam" type="button" role="tab" aria-controls="RhodesUniversitySRCMediaTeam" aria-selected="false">Rhodes University SRC Media Team</button>
-          <button class="nav-link" id="ParliamentaryMonitoringGroup-tab" data-bs-toggle="pill" data-bs-target="#ParliamentaryMonitoringGroup" type="button" role="tab" aria-controls="ParliamentaryMonitoringGroup" aria-selected="false">Parliamentary Monitoring Group</button>
-          <button class="nav-link" id="StatsSACensus2022-tab" data-bs-toggle="pill" data-bs-target="#StatsSACensus2022" type="button" role="tab" aria-controls="StatsSACensus2022" aria-selected="false">Stats SA Cenus 2022</button>
-          <button class="nav-link" id="LifeChoices-tab" data-bs-toggle="pill" data-bs-target="#LifeChoices" type="button" role="tab" aria-controls="LifeChoices" aria-selected="false">Life Choices</button>
-        </div>
-        <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="OprahWinfreyLeadershipAcedemy" role="tabpanel" aria-labelledby="OprahWinfreyLeadershipAcedemy">
-            <h5 class="mb-0">Matric</h5>
-            <span id="date" class="mb-15">November 2017</span>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> IEB Bachelor Pass</p>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Results available upon request</p>
-          </div>
-          <div class="tab-pane fade" id="RhodesUniversity" role="tabpanel" aria-labelledby="RhodesUniversity">
-            <h5 class="mb-0">Bachelor of Arts (2nd Year)</h5>
-            <span id="date" class="mb-15">February 2018 - November 2021</span>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Majoring in Philosophy and Economics</p>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Distinction in Psychology 1</p>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Results available upon request</p>
-          </div>
-          <div class="tab-pane fade" id="RhodesUniversitySRCMediaTeam" role="tabpanel" aria-labelledby="RhodesUniversitySRCMediaTeam">
-            <h5 class="mb-0">Deputy Writing Editor</h5>
-            <span id="date" class="mb-15">February 2020 - November 2020</span>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Writing Editor</p>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Writing and editing articles and SRC statements</p>
-          </div>
-          <div class="tab-pane fade" id="ParliamentaryMonitoringGroup" role="tabpanel" aria-labelledby="ParliamentaryMonitoringGroup">
-            <h5 class="mb-0">Freelance Monitor</h5>
-            <span id="date" class="mb-15">September 2021 - January 2022</span>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Monitoring Women, Youth and People with Disability Committee meetings</p>
-          </div>
-          <div class="tab-pane fade" id="StatsSACensus2022" role="tabpanel" aria-labelledby="StatsSACensus2022">
-            <h5 class="mb-0">Fielworker Supervisor</h5>
-            <span id="date" class="mb-15">February 2022 - March 2022</span>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Fieldwork verification</p>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Conducting publicity</p>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Quality control</p>
-
-          </div>
-          <div class="tab-pane fade" id="LifeChoices" role="tabpanel" aria-labelledby="LifeChoices">
-            <h5 class="mb-0">Student</h5>
-            <span id="date" class="mb-15">March 2022 - Present</span>
-            <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Web development</p>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
+    
     <!-- projects -->
     <section id="projects">
       <div class="container">
-        <h1 class="text-decoration-underline">Projects</h1>
+        <h1>Projects</h1>
         <div class="project-container">
           <div class="row mt-5">
             <div class="col-md-6" id="project-image">
@@ -187,42 +131,106 @@
             </div>
             <div class="col-md-6 d-flex-column align-items-end" id="project-info">
               <h4>Restaurant Webpage</h4>
-              <div class="project-desc shadow p-3">I created a webpage using Bootstrap 5, HTML 5 and CSS. The project required me to learn how to read documentation so I could attempt to use skills I had not officially been taught before. Through the course of a week I had to replicate the example given as closely as possible.</div>
+              <div class="project-desc shadow p-3 lh-base">I created a webpage using Bootstrap 5, HTML 5 and CSS. The project required me to learn how to read documentation so I could attempt to use skills I had not officially been taught before. Through the course of a week I had to replicate the example given as closely as possible.</div>
               <div id="project-link"><a href="https://github.com/siyolisemekuto/bootstrap/tree/main/website"><i class="fa-brands fa-github-square"></i></a>
               <a href="https://lighthearted-wisp-898038.netlify.app/"><i class="fa-solid fa-up-right-from-square py-4"></i></a></div>
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-md-6" id="project-info-two">
+            <div class="col-md-6 d-flex-column align-items-start" id="project-info-two">
               <h4>Mock Portfolio</h4>
-              <div class="project-desc shadow p-3">This was my second attempt to create a portfolio. Using a sample from bootstrap, I had to replicate it as closely as possible. This project intoduced me to interactive effects (hover in particular) and the Bootstrap grid system.</div>
-              <div id="project-link" class="d-flex"><a href="https://musical-lollipop-f78be0.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
-              <a href="https://github.com/siyolisemekuto/mock-portfolio"><i class="fa-brands fa-github-square py-4"></i></a></div>
+              <div class="project-desc shadow p-3 lh-base">This was my second attempt to create a portfolio. Using a sample from bootstrap, I had to replicate it as closely as possible. This project intoduced me to interactive effects (hover in particular) and the Bootstrap grid system.</div>
+              <div id="project-link">
+              <a href="https://github.com/siyolisemekuto/mock-portfolio" ><i class="fa-brands fa-github-square"></i></a>
+              <a href="https://musical-lollipop-f78be0.netlify.app/"><i class="fa-solid fa-up-right-from-square py-4"></i></a>
             </div>
+            </div>
+          
             <div class="col-md-6" id="project-image">
               <img class="img-fluid rounded" style="width: 800px; height: 50vh; object-fit: cover;" src="./assets/mock.PNG">
             </div>
           </div>
+
           <div class="row mt-5">
             <div class="col-md-6" id="project-image">
               <img class="img-fluid rounded" style="width: 800px; height: 50vh;" src="./assets/calculator.png">
             </div>
             <div class="col-md-6 d-flex-column align-items-end" id="project-info">
               <h4>Calculator</h4>
-              <div class="project-desc shadow p-3">Creating the calculator was my most ambitious attempt (thus far) at creating something with HTML 5 nd CSS only. It required me to be strategic about how I place my elements in order to get the end result.</div>
-              <div id="project-link" class="d-flex"><a href="https://github.com/siyolisemekuto/calculator"><i class="fa-brands fa-github-square"></i></a>
-              <a href="https://boisterous-sunburst-0df457.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a></div>
+              <div class="project-desc shadow p-3 lh-base">Creating the calculator was my most ambitious attempt (thus far) at creating something with HTML 5 nd CSS only. It required me to be strategic about how I place my elements in order to get the end result.</div>
+              <div id="project-link"><a href=https://github.com/siyolisemekuto/calculator"
+                ><i class="fa-brands fa-github-square"></i></a>
+                <a href="https://boisterous-sunburst-0df457.netlify.app/"><i class="fa-solid fa-up-right-from-square py-4"></i></a></div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
+
+<!-- experience -->
+
+<section id="experience">
+  <div class="container">
+  <h1>Education and Experience</h1>
+  <div class="d-flex align-items-start" id="nav-pill">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <button class="nav-link " id="OprahWinfreyLeadershipAcedemy-tab" data-bs-toggle="pill" data-bs-target="#OprahWinfreyLeadershipAcedemy" type="button" role="tab" aria-controls="OprahWinfreyLeadershipAcedemy" aria-selected="true">Oprah Winfrey Leadership Academy</button>
+      <button class="nav-link" id="RhodesUniversity-tab" data-bs-toggle="pill" data-bs-target="#RhodesUniversity" type="button" role="tab" aria-controls="RhodesUniversity" aria-selected="false">Rhodes University</button>
+      <button class="nav-link" id="RhodesUniversitySRCMediaTeam-tab" data-bs-toggle="pill" data-bs-target="#RhodesUniversitySRCMediaTeam" type="button" role="tab" aria-controls="RhodesUniversitySRCMediaTeam" aria-selected="false">Rhodes University SRC Media Team</button>
+      <button class="nav-link" id="ParliamentaryMonitoringGroup-tab" data-bs-toggle="pill" data-bs-target="#ParliamentaryMonitoringGroup" type="button" role="tab" aria-controls="ParliamentaryMonitoringGroup" aria-selected="false">Parliamentary Monitoring Group</button>
+      <button class="nav-link" id="StatsSACensus2022-tab" data-bs-toggle="pill" data-bs-target="#StatsSACensus2022" type="button" role="tab" aria-controls="StatsSACensus2022" aria-selected="false">Stats SA Cenus 2022</button>
+      <button class="nav-link" id="LifeChoices-tab" data-bs-toggle="pill" data-bs-target="#LifeChoices" type="button" role="tab" aria-controls="LifeChoices" aria-selected="false">Life Choices</button>
+    </div>
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="OprahWinfreyLeadershipAcedemy" role="tabpanel" aria-labelledby="OprahWinfreyLeadershipAcedemy">
+        <a href="https://www.oprahfoundation.org/portfolio-item/oprah-leadership-academy"><h5 class="mb-0">Matric</h5></a>
+        <span id="date" class="mb-15">November 2017</span>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> IEB Bachelor Pass</p>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Results available upon request</p>
+      </div>
+      <div class="tab-pane fade" id="RhodesUniversity" role="tabpanel" aria-labelledby="RhodesUniversity">
+        <a href="https://www.ru.ac.za/facultyofhumanities/"><h5 class="mb-0">Bachelor of Arts (2nd Year)</h5></a>
+        <span id="date" class="mb-15">February 2018 - November 2021</span>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Majoring in Philosophy and Economics</p>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Distinction in Psychology 1</p>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Results available upon request</p>
+      </div>
+      <div class="tab-pane fade" id="RhodesUniversitySRCMediaTeam" role="tabpanel" aria-labelledby="RhodesUniversitySRCMediaTeam">
+        <a href="https://www.ru.ac.za/studentrepresentativecouncil/"><h5 class="mb-0">Deputy Writing Editor</h5></a>
+        <span id="date" class="mb-15">February 2020 - November 2020</span>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Writing Editor</p>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Writing and editing articles and SRC statements</p>
+      </div>
+      <div class="tab-pane fade" id="ParliamentaryMonitoringGroup" role="tabpanel" aria-labelledby="ParliamentaryMonitoringGroup">
+        <a href="https://pmg.org.za/committee/51/"><h5 class="mb-0">Freelance Monitor</h5></a>
+        <span id="date" class="mb-15">September 2021 - January 2022</span>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Monitoring Women, Youth and Persons with Disabilities Committee meetings</p>
+      </div>
+      <div class="tab-pane fade" id="StatsSACensus2022" role="tabpanel" aria-labelledby="StatsSACensus2022">
+        <a href="http://census.statssa.gov.za/"><h5 class="mb-0">Fielworker Supervisor</h5></a>
+        <span id="date" class="mb-15">February 2022 - March 2022</span>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Fieldwork verification</p>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Conducting publicity</p>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Quality control</p>
+
+      </div>
+      <div class="tab-pane fade" id="LifeChoices" role="tabpanel" aria-labelledby="LifeChoices">
+        <a href="https://www.lifechoices.co.za/academy"><h5 class="mb-0">Student</h5></a>
+        <span id="date" class="mb-15">March 2022 - Present</span>
+        <p><i class="fa-solid fa-caret-right" id="arrow-icon"></i> Web development</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
 
     <!-- testimonials -->
 
         <section id="testimonials">
           <div class="container">
-              <h1 class="text-decoration-underline">Testimonials</h1>
+              <h1>Testimonials</h1>
               <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators">
                     <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="0" class="active"  aria-current="true" aria-label="Slide 1"></button>
@@ -235,27 +243,27 @@
                     <div class="carousel-item pb-5 text-center active">
                           <img src="./assets/smangele.jpg" style="width: 180px; height: 180px;" alt="Person" class="rounded">
                         <h5>Smangele Mntungwa</h5>
-                        <p>Siyolise is one of the most humble characters I've ever come across, she is always eager to assist the next person. She has shown great dedication and work ethic, She inspires me to do better.</p>
+                        <p class="badge text-wrap lh-base" style="width: 40rem;">Siyolise is one of the most humble characters I've ever come across, she is always eager to assist the next person. She has shown great dedication and work ethic, She inspires me to do better.</p>
                     </div>
                     <div class="carousel-item pb-5 text-center">
                       <img src="./assets/jason.jpg" style="width: 180px; height: 180px;" alt="Person" class="rounded">
                     <h5>Jason Wandrag</h5>
-                    <p>Siyolise is a hardworking and dedicated young lady, who has been constantly striving to improve herself. Over the short time that I have known her, she has improved immensely and has overcome every challenge thrown at her. I wish her the best in her future ventures.</p>
+                    <p  class="badge text-wrap lh-base" style="width: 40rem;">Siyolise is a hardworking and dedicated young lady, who has been constantly striving to improve herself. Over the short time that I have known her, she has improved immensely and has overcome every challenge thrown at her. I wish her the best in her future ventures.</p>
                 </div>
                     <div class="carousel-item pb-5 text-center">
                           <img src="./assets/Lihle.jpg" style="width: 180px; height: 180px;" alt="Person" class="rounded">
                         <h5>Lihle Goliath</h5>
-                        <p>Siyolise is a kind-hearted, trustworthy and compassionate person. She has unlimited potential. I believe that she is strong and unshaken, and will complete anything she set her sights on.</p>
+                        <p  class="badge text-wrap lh-base" style="width: 40rem;">Siyolise is a kind-hearted, trustworthy and compassionate person. She has unlimited potential. I believe that she is strong and unshaken, and will complete anything she set her sights on.</p>
                     </div>
                     <div class="carousel-item pb-5 text-center">
                           <img src="./assets/sibonile.jpg" style="width: 180px; height: 180px;" alt="Person" class="rounded">
                         <h5>Sibonile Nyalambisa</h5>
-                        <p>Siyolise is polite and respectful. She is a great communicator and can manage people to get tasks done on time.</p>
+                        <p  class="badge text-wrap lh-base" style="width: 40rem;">Siyolise is polite and respectful. She is a great communicator and can manage people to get tasks done on time.</p>
                     </div>
                     <div class="carousel-item pb-5 text-center">
                       <img src="./assets/Sabelo.JPG" style="width: 180px; height: 180px;" alt="Person" class="rounded">
                     <h5>Sabelo Mdashe</h5>
-                    <p>Siyolise has the ability to befriend anyone she meets, as she is a natural extrovert and is noticeably confident. She interacts well with everyone because of her confidence and her amicable and very sincere personality. Aside from enjoying a wide circle of loyal friends and peers, Siyolise also has the respect of her colleagues.</p>
+                    <p  class="badge text-wrap lh-base" style="width: 40rem;">Siyolise has the ability to befriend anyone she meets, as she is a natural extrovert and is noticeably confident. She interacts well with everyone because of her confidence and her amicable and very sincere personality. Aside from enjoying a wide circle of loyal friends and peers, Siyolise also has the respect of her colleagues.</p>
                 </div>
                 
                   </div>
@@ -268,8 +276,8 @@
     <!-- contact -->
     <section id="contact">
         <div class="container">
-            <h1 class="text-decoration-underline">Contact me</h1>
-            <div class="row">
+            <h1>Contact me</h1>
+            <div class="row " id="about-area">
               <div class="col-md-4">
                 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52847.932331868935!2d18.864726!3d-34.120858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdca5228bfab99%3A0xfa579031c0ea9162!2s19173%20Nonqubela%20St%2C%20Lwandle%2C%20Cape%20Town%2C%207143%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1652359541452!5m2!1sen!2sus"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
@@ -301,20 +309,15 @@
       <footer class="text-center shadow p-3">
         <a href= https://github.com/siyolisemekuto/end-of-module-project><p>Created by Siyolise Mekuto, 2022</p></a>
       </footer>
-<!-- <script src="./particles.js"></script> -->
-
-<!-- <script src="./particlesjs-config.json" id="particles-js"></script> -->
 
 
 
-    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-      particlesJS.load("particular", "particles.json", function () {
-        console.log("callback - particles.js config loaded");
-      });
-    </script>
+
     
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
