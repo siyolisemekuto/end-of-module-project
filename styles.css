@@ -141,7 +141,6 @@ h1{
 #socials{
     display: flex;
     flex-direction: column;
-    position: fixed;
     bottom: 18%;
     left: 0;
 }
@@ -401,6 +400,20 @@ footer.text-center{
 
 
 /* media queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1400px) {
     [class*="col-"] { width: 100%;}
+.project-info{
+    width:100%
+}
+.project-image{
+    width:100%
+}
+}
+
+@media screen and (max-width: 1400px){
+    #landing ul{
+        display: flex;
+        margin-bottom: 10rem;
+        margin-inline: auto;
+    }
 }
